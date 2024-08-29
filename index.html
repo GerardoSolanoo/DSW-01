@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paradigma de Solicitud-Respuesta</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-background">
+        <img src="/images/header-bg.jpg" alt="">
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#home">¿Qué es?</a></li>
+          <li><a href="#features">Características</a></li>
+          <li><a href="#format-data">Formato de Datos</a></li>
+          <li><a href="#social-media">Social Media</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Paradigma de Solicitud-Respuesta</h1>
+        <p>
+          En el paradigma de solicitud-respuesta, un cliente envía una solicitud a un servidor, que 
+          procesa la solicitud y envía una respuesta de vuelta al cliente. 
+          Este modelo es sincrónico, 
+          lo que significa que el cliente espera a recibir la respuesta antes de continuar con la siguiente operación.
+        </p>
+        <button><a href="">↓</a></button>
+      </div>
+    </header>
+    <main>
+      <section class="features" id="features">
+        <h2><b><i>Protocolos de comunicación</i></b></h2>
+        <p>
+          Los protocolos de comunicación son las reglas y estándares que definen cómo los datos son transmitidos y recibidos en una red. 
+          En el contexto del paradigma solicitud-respuesta, los siguientes protocolos son los más relevantes.
+        </p>
+        <div class="cards-container">
+          <div class="card">
+            <img src="/images/http.png" alt="Protocolos de Comunicación" />
+            <h3>HTTP/HTTPS</h3>
+            <p>
+              Define cómo se formatean y transmiten los mensajes entre un cliente (como un navegador) y un servidor. 
+              HTTPS es la versión segura de HTTP, que cifra la comunicación para proteger la privacidad y la integridad de los datos.
+            </p>
+          </div>
+          <div class="card">
+            <img src="/images/enchufe.png" alt="Formatos de Datos" />
+            <h3>WEBSOCKET</h3>
+            <p>
+              WebSocket permite la comunicación bidireccional entre un cliente y un servidor a través de una única conexión persistente. 
+              Es útil para aplicaciones que requieren actualizaciones en tiempo real, como chats o aplicaciones de streaming.
+            </p>
+          </div>
+          <div class="card">
+            <img src="/images/nube.png" alt="Formatos de Datos" />
+            <h3>gRPC</h3>
+            <p>
+              gRPC es un protocolo de comunicación de código abierto que utiliza HTTP/2 para transmitir datos de manera eficiente. 
+              Es utilizado para la comunicación entre servicios en microservicios, especialmente en entornos de alto rendimiento.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="first-separator"></div>
+      <section class="format-data" id="format-data">
+        <h2>Formatos de datos</h2>
+        <p>Los formatos de datos son estructuras utilizadas 
+          para organizar y representar la información transmitida entre el cliente 
+          y el servidor.</p>
+        <div class="format-examples">
+          <div class="example-item">
+            <img src="/images/json.png" alt="JSON" />
+            <h3>JSON (JavaScript Object Notation)</h3>
+            <p>JSON es un formato de datos ligero y fácil de leer/escribir. 
+              Es ampliamente utilizado en la comunicación entre aplicaciones web debido a su simplicidad y compatibilidad con la mayoría de los lenguajes de programación.</p>
+          </div>
+          <div class="collaborator-item">
+            <img src="/images/archivo-xml.png" alt="XML" />
+            <h3>XML (Extensible Markup Language)</h3>
+            <p>XML es un formato de datos más complejo que JSON, pero es extremadamente flexible y puede definir estructuras de datos más detalladas. Es utilizado en sistemas donde la estructura y los datos deben ser muy explícitos.</p>
+          </div>
+          <div class="collaborator-item">
+            <img src="/images/buffer.png" alt="PROTOBUF:" />
+            <h3>Protocol Buffers (Protobuf)</h3>
+            <p>Protobuf es un formato de serialización de datos desarrollado por Google, 
+              que es más eficiente que JSON o XML en términos de tamaño y velocidad de procesamiento.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="second-separator"></div>
+    <footer>
+      <div class="social-media" id="social-media">
+        <a href="#" rel="noopener noreferrer">Facebook</a>
+        <a href="#" rel="noopener noreferrer">Instagram</a>
+        <a href="#" rel="noopener noreferrer">Twitter</a>
+      </div>
+      <div class="contact">
+        <p>Contact us</p>
+        <form action="">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
